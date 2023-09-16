@@ -1,0 +1,54 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>World Countries Data</title>
+		<link
+			rel="stylesheet"
+			href="./styles.css" />
+
+		<script
+			defer
+			type="module"
+			src="./scripts/main.js"></script>
+	</head>
+
+	<body>
+		<div class="header">
+			<h1 class="title">World Countries Data</h1>
+			<p class="subtitle"></p>
+			<p class="search-title"></p>
+		</div>
+
+		<div class="search-menu">
+			<input
+				class="search"
+				type="search"
+				name="sear"
+				placeholder="Search Countries by Name and City" />
+
+			<div class="btn">
+				<button class="name">Name</button>
+				<button class="capital">Capital</button>
+				<button class="population">Population</button>
+				<a href="#chart"><button class="chart">Chart</button></a>
+			</div>
+		</div>
+
+		<div class="countries-view"></div>
+
+		<div
+			class="chart"
+			id="chart">
+			<div class="chart-haeder">
+				<h2 class="title"></h2>
+			</div>
+
+			<div class="chart-items">
+				<div class="total"></div>
+				<div class="all"></div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,152 @@
+/** @format */
+
+*,
+*:focus,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Trebuchet MS';
+	outline: none;
+}
+
+body,
+html {
+	background-color: #f7f6f6;
+}
+
+.header {
+	text-align: center;
+	padding: 20px 0;
+}
+
+.header .title {
+	color: orange;
+}
+
+.header .search-title {
+	color: orange;
+}
+
+.search-menu {
+	background-color: #fff;
+	padding: 50px 0;
+	text-align: center;
+}
+
+.search-menu .search {
+	border-radius: 10em;
+	border: 1px solid lightgrey;
+	padding: 10px;
+	width: 90%;
+}
+
+.search-menu .btn {
+	padding: 40px 0 0 0;
+}
+
+.search-menu .btn button,
+.chart-haeder .btn button {
+	border-radius: 10em;
+	border: 1px solid orange;
+	background-color: orange;
+	font-weight: 900;
+	padding: 10px;
+	padding: 10px 30px;
+	cursor: pointer;
+}
+
+.countries-view {
+	display: flex;
+	padding: 20px;
+	/* align-items: center; */
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.countries-view .country {
+	background-color: #fff;
+	padding: 10px 30px;
+	text-align: center;
+	border-radius: 5px;
+	margin: 10px 15px;
+	width: 250px;
+	/* display: inline-block; */
+}
+
+.countries-view .country .flag {
+	border-radius: 5px;
+}
+
+.countries-view .country .text {
+	text-align: left;
+}
+
+@media (max-width: 500px) {
+	.countries-view .country {
+		width: 100%;
+	}
+
+	.countries-view .country .text {
+		text-align: center;
+	}
+}
+
+.chart-haeder {
+	text-align: center;
+}
+
+.chart-haeder {
+	padding: 20px 0;
+	background-color: #fff;
+}
+
+.chart-haeder .subtitle {
+	margin: 10px 0;
+}
+
+.chart-items {
+	padding: 20px 0;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.chart-items .chart-item {
+	display: flex;
+	text-align: left;
+}
+
+.chart-items .chart-item .name {
+	padding: 16px;
+	width: 25%;
+}
+
+.chart-items .chart-item .percent {
+	width: 50%;
+	background-color: #ffffff;
+	border-radius: 5px;
+	margin: 2px 0;
+	border: 1px solid #ffa500;
+}
+
+.chart-items .chart-item .percentage {
+	width: 0%;
+	height: 100%;
+	background-color: orange;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.percentage span {
+    background: orange;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.chart-items .chart-item .number {
+	padding: 16px;
+	width: 10%;
+}
